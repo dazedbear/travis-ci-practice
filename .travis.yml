@@ -1,0 +1,23 @@
+language: node_js
+sudo: enabled
+before_install:
+  - sudo apt-get -qq update
+  - nvm install v6.11.3
+  - nvm use 6.11.3
+install: 
+  - npm install
+script:
+  - npm run start
+  - npm run test
+before deploy:
+  branches:
+    # blocklist
+    except:
+    - develop
+
+    # safelist
+    only:
+    - master
+
+notifications:
+   slack: 104corp:1wsSxceqYcshHnC1rmQPXrqk

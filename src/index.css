@@ -1,0 +1,29 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+/*header, nav, div, footer{
+  border: 1px dashed #666;
+}*/
+body, a, span, p{
+  color: #565656;
+}
+.container{
+  width: 100%;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+header{
+  height: 230px;
+  background: url(http://p11cdn4static.sharpschool.com/UserFiles/Servers/Server_54327/Image/37890897-technology-images.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+nav, footer{
+  height: 50px;
+  background: linear-gradient(60deg, #ccc, #eee);
+  box-shadow: 0px 2px 5px #999;
+}
+.main{
+  height: 500px;
+}

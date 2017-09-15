@@ -1,0 +1,14 @@
+footer p{
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+footer::after{
+  content: "";
+  height: 100%;
+  width: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
